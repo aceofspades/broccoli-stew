@@ -1,6 +1,6 @@
-# Broccoli Stew [![Build Status](https://travis-ci.org/stefanpenner/broccoli-stew.svg)](https://travis-ci.org/stefanpenner/broccoli-stew) [![Build status](https://ci.appveyor.com/api/projects/status/orspre01ru61xiba?svg=true)](https://ci.appveyor.com/project/embercli/broccoli-stew)
+# Broccoli Stew [![Build Status](https://travis-ci.org/stefanpenner/broccoli-stew.svg)](https://travis-ci.org/stefanpenner/broccoli-stew) [![Build status](https://ci.appveyor.com/api/projects/status/orspre01ru61xiba?svg=true)](https://ci.appveyor.com/project/embercli/broccoli-stew) [![Inline docs](http://inch-ci.org/github/stefanpenner/broccoli-stew.svg?branch=master)](http://inch-ci.org/github/stefanpenner/broccoli-stew)
 
-Provides commonly used convience functions for developing broccoli based build pipelines.
+Provides commonly used convenience functions for developing broccoli based build pipelines.
 
 ## What's inside
 
@@ -14,3 +14,12 @@ Currently the following methods are available:
 - [`log`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/log.js#L27) - Logs out files in the passed tree.
 - [`debug`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/debug.js#L12) - Writes the passed tree to disk at the root of the project.
 - [`rm`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/rm.js#L40) - Remove files from a tree.
+- [`beforeBuild`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/before-build.js) - Calls a callback function before the tree is read.
+- [`afterBuild`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/after-build.js) - Calls a callback function after the tree is read.
+- [`wrapBuild`](https://github.com/stefanpenner/broccoli-stew/blob/master/lib/wrap-build.js) - Calls callback functions before and after the tree is read.
+
+
+
+## Ok, but tell me more
+
+* [using broccoli-stew to debug a broccoli tree](http://reefpoints.dockyard.com/2015/02/02/debugging-a-broccoli-tree.html)
